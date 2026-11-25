@@ -2,6 +2,8 @@ import Link from "next/link";
 import CardArt from "../components/CardArt";
 import { profile, highlights, projects, experience, skills } from "../data/content";
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Home() {
   return (
     <main className="wrap">
@@ -38,7 +40,13 @@ export default function Home() {
                 <p>{p.cardText}</p>
                 <span className="go">Read case study →</span>
               </div>
-              <div className="art" aria-hidden="true"><CardArt type={p.art} /></div>
+              {p.cardImage ? (
+                <div className="art art-shot">
+                  <img src={`${base}${p.cardImage.src}`} alt={p.cardImage.alt} width="1280" height="720" />
+                </div>
+              ) : (
+                <div className="art" aria-hidden="true"><CardArt type={p.art} /></div>
+              )}
             </Link>
           ))}
         </div>
