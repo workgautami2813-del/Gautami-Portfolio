@@ -25,6 +25,7 @@ export const projects = [
     color: "apycue",
     wide: true,
     art: "agent",
+    cardImage: { src: "/screens/inbox-agent.webp", alt: "Apycue Inbox, where the AI agent answers a guest's room enquiry on WhatsApp" },
     period: "2025 – now",
     tags: "AI · SaaS · Hospitality",
     cardTitle: "Apycue: an AI-agent platform for hotels",
@@ -68,7 +69,39 @@ export const projects = [
         ],
       },
       {
-        shot: ["Add 2–3 key screens here", "For example the agent conversation view, the bookings dashboard, and onboarding. Export them from Figma."],
+        heading: "Designing the Inbox",
+        paragraphs: [
+          "The Inbox is where a hotel team works side by side with the AI agent. Every guest conversation, from WhatsApp, the hotel website or a phone call, lands in one list. The agent answers most of them. The team only steps in when a guest needs a person, so the screen has to show at a glance who needs to act, and give them everything they need to reply without scrolling back through the chat.",
+        ],
+        decisions: [
+          ["Sort by who needs to act.", "Conversations are grouped into Needs you, With your team and Handled by agent. Staff see the two that need them first, not all nine."],
+          ["One clear handover.", "Take over pauses the agent and Hand over to agent gives the conversation back. The header always shows who is answering, and the thread records the moment it changed hands."],
+          ["Every message shows who sent it.", "Guest, AI agent or a named team member, each with its own style, so nobody has to guess what the guest has already been told."],
+          ["The context sits next to the chat.", "The side panel shows the stay request with dates, rooms and the quoted price, an AI summary of where things stand, contact details and team notes."],
+          ["Hot leads in one tap.", "A filter pulls out the guests most likely to book, such as a 30-guest wedding block or a guest who has accepted a quote."],
+        ],
+      },
+      {
+        gallery: [
+          {
+            src: "/screens/inbox-agent.webp",
+            title: "The agent is answering",
+            caption: "The AI agent quoted Abhishek a rate and is waiting on an availability check, so his conversation moves to Needs you. The reply box tells staff the agent has paused and is waiting for them.",
+            alt: "Apycue Inbox with the AI agent answering a guest who wants 2 deluxe rooms for 12 to 14 December",
+          },
+          {
+            src: "/screens/inbox-team.webp",
+            title: "A team member takes over",
+            caption: "Priya takes over from the agent. The thread marks the handover, the conversation moves to With your team, and the summary updates: both rooms are on hold until tonight.",
+            alt: "Apycue Inbox after a staff member took over the conversation from the AI agent",
+          },
+          {
+            src: "/screens/inbox-hot-leads.webp",
+            title: "Hot leads",
+            caption: "One tap narrows the Inbox to the three guests most likely to book, so the team spends its time where it can win a direct booking.",
+            alt: "Apycue Inbox filtered to show three hot leads",
+          },
+        ],
       },
       {
         heading: "Reflection",
