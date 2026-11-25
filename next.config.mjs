@@ -9,6 +9,8 @@ const nextConfig = {
   trailingSlash: true,
   basePath,
   images: { unoptimized: true },
+  // Lets plain <img> tags find files in /public when the site lives under a sub-path.
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
 };
 
 export default nextConfig;
