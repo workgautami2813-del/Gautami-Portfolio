@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "../../../data/content";
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
@@ -45,7 +47,18 @@ export default async function CaseStudy({ params }) {
       </div>
 
       {p.sections.map((s, i) =>
-        s.shot ? (
+        s.gallery ? (
+          <div className="gallery" key={i}>
+            {s.gallery.map((g) => (
+              <figure className="screen" key={g.src}>
+                <a href={`${base}${g.src}`} target="_blank" rel="noopener noreferrer" aria-label={`Open full size: ${g.title}`}>
+                  <img src={`${base}${g.src}`} alt={g.alt} width="1280" height="720" loading="lazy" />
+                </a>
+                <figcaption><b>{g.title}</b>{g.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : s.shot ? (
           <div className="shot" key={i}><div><b>{s.shot[0]}</b>{s.shot[1]}</div></div>
         ) : (
           <div className="prose" key={i}>
