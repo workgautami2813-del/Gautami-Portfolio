@@ -103,7 +103,81 @@ export const projects = [
           },
         ],
       },
+            {
+        heading: "Setting up the agent",
+        paragraphs: [
+          "Before the agent can talk to guests, a hotel has to set it up. I wanted this to take a few minutes, with no help from us. So I split it into small steps and kept every screen short.",
+        ],
+        decisions: [
+          ["One step at a time.", "The list on the left has four steps: Setup, Details to collect, Notifications and Install. A small card at the top shows how much is done."],
+          ["Say what the agent will ask.", "The hotel picks the details to collect, like name, dates and guests. Phone number and email are always asked, so the team can always reply."],
+          ["See the result while you edit.", "A live preview of the chat sits on the right. When the hotel changes the colour or the greeting, the preview changes too."],
+          ["Make WhatsApp feel easy.", "WhatsApp setup was the hardest part, because it needs a Facebook account. I turned it into a short checklist, then one Connect button that guides the hotel through the rest."],
+        ],
+      },
       {
+        gallery: [
+          {
+            src: "/screens/config-setup.webp",
+            title: "Setup",
+            caption: "Name, photo, greeting and the look of the chat, all on one screen. The preview on the right updates as the hotel types.",
+            alt: "Apycue agent setup screen with name, photo, greeting and a live chat preview",
+          },
+          {
+            src: "/screens/config-details.webp",
+            title: "Details to collect",
+            caption: "The hotel ticks what the agent should ask. Phone and email are locked on, and a short note explains when a guest counts as a hot lead.",
+            alt: "Apycue screen for choosing which guest details the agent collects",
+          },
+          {
+            src: "/screens/config-notifications.webp",
+            title: "Notifications",
+            caption: "Two switches and a list of people. The hotel decides who hears about new inquiries.",
+            alt: "Apycue notifications settings with two toggles and a list of team members",
+          },
+          {
+            src: "/screens/config-install.webp",
+            title: "Install",
+            caption: "Copy the chat code, choose the websites it can run on, and try it in test mode before going live.",
+            alt: "Apycue install screen with chat code, allowed websites and test mode",
+          },
+        ],
+      },
+      {
+        heading: "Connecting WhatsApp",
+        paragraphs: [
+          "The first version had a lot of text. I cut it down to a three-item checklist, a clear status and one button. Each tick moves the hotel closer to Connect, and the last two screens show what happens next.",
+        ],
+      },
+      {
+        gallery: [
+          {
+            src: "/screens/whatsapp-before.webp",
+            title: "Before you connect",
+            caption: "Three things to have ready: a phone number, a verified Meta business account and admin access on Facebook.",
+            alt: "Apycue WhatsApp screen with a checklist of three things to have ready",
+          },
+          {
+            src: "/screens/whatsapp-ready.webp",
+            title: "Ready to connect",
+            caption: "All three are ticked. The progress pill turns green and the Connect button is ready.",
+            alt: "Apycue WhatsApp checklist with all three items ticked",
+          },
+          {
+            src: "/screens/whatsapp-facebook.webp",
+            title: "Finish on Facebook",
+            caption: "A Facebook window opens. This page tells the hotel to keep it open, and the steps on the right show where they are.",
+            alt: "Apycue WhatsApp screen waiting for the Facebook step to finish",
+          },
+          {
+            src: "/screens/whatsapp-connected.webp",
+            title: "Connected",
+            caption: "WhatsApp is on. A short summary shows the number and that the agent replies to guests.",
+            alt: "Apycue WhatsApp connected screen with a short summary",
+          },
+        ],
+      },
+{
         heading: "What I learned",
         paragraphs: [
           "AI can make a screen in seconds. Deciding what the product should do is still my job. On Apycue, the hard part was deciding how much of the agent's work a hotel team needs to see.",
