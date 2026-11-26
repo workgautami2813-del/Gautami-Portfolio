@@ -25,7 +25,7 @@ export const projects = [
     color: "apycue",
     wide: true,
     art: "agent",
-    cardImage: { src: "/screens/inbox-agent.webp", alt: "Apycue Inbox where the AI agent answers a guest's room question on WhatsApp" },
+    cardImage: { src: "/screens/Inbox%20v3A%20%E2%80%93%20Monochrome.png", alt: "Apycue Inbox where the AI agent answers a guest's room question on WhatsApp" },
     period: "2025 – now",
     tags: "AI · SaaS · Hospitality",
     cardTitle: "Apycue: an AI agent platform for hotels",
@@ -84,7 +84,7 @@ export const projects = [
       {
         gallery: [
           {
-            src: "/screens/inbox-agent.webp",
+            src: "/screens/Inbox%20v3A%20%E2%80%93%20Monochrome.png",
             title: "The agent is answering",
             caption: "The agent gave Abhishek a price and said it would check the rooms. Two days later he is still waiting, so he shows up under Needs you. The reply box tells staff to take over.",
             alt: "Apycue Inbox with the AI agent answering a guest who wants 2 deluxe rooms for 12 to 14 December",
@@ -96,7 +96,7 @@ export const projects = [
             alt: "Apycue Inbox after a staff member took over the conversation from the AI agent",
           },
           {
-            src: "/screens/inbox-hot-leads.webp",
+            src: "/screens/Inbox%20v3A%20%E2%80%93%20Hot%20leads.png",
             title: "Hot leads",
             caption: "The Hot leads tab shows only the three guests most likely to book, so staff can look at them first. Abhishek is still waiting, so the Take over button is right there.",
             alt: "Apycue Inbox filtered to show three hot leads, with a Take over button",
